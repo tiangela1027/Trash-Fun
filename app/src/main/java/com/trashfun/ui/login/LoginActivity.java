@@ -3,6 +3,7 @@ package com.trashfun.ui.login;
 import android.app.Activity;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -18,6 +19,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.trashfun.Main2Activity;
 import com.trashfun.R;
 import com.trashfun.ui.login.LoginViewModel;
 import com.trashfun.ui.login.LoginViewModelFactory;
@@ -119,6 +121,9 @@ public class LoginActivity extends AppCompatActivity {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
+
+        Intent intentMain = new Intent(getApplicationContext(), Main2Activity.class);
+        startActivity(intentMain);
     }
 
     private void showLoginFailed(@StringRes Integer errorString) {
