@@ -19,10 +19,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.trashfun.Main2Activity;
+import com.trashfun.HomeActivity;
 import com.trashfun.R;
-import com.trashfun.ui.login.LoginViewModel;
-import com.trashfun.ui.login.LoginViewModelFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -122,7 +120,7 @@ public class LoginActivity extends AppCompatActivity {
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
 
-        Intent intentMain = new Intent(getApplicationContext(), Main2Activity.class);
+        Intent intentMain = new Intent(getApplicationContext(), HomeActivity.class);
         startActivity(intentMain);
     }
 
