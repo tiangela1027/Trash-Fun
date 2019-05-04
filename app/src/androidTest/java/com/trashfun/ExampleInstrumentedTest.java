@@ -1,4 +1,4 @@
-package com.girlsintech_25;
+package com.trashfun;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

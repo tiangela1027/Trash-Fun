@@ -1,4 +1,4 @@
-package com.girlsintech_25;
+package com.trashfun;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.girlsintech_25;
+package com.trashfun;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
