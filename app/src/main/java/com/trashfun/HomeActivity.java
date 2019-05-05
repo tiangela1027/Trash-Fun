@@ -23,8 +23,8 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intentPage = new Intent(getApplicationContext(), User.class);
+                startActivity(intentPage);
             }
         });
 
@@ -45,6 +45,15 @@ public class HomeActivity extends AppCompatActivity {
                 Intent intentMain = new Intent(getApplicationContext(), ChallengesActivity.class);
                 startActivity(intentMain);
                 Log.i("Content "," Go to Points page. ");
+            }
+        });
+
+        Button redeem = (Button) findViewById(R.id.redeem);
+        redeem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentPage = new Intent(getApplicationContext(), ConfirmPoints.class);
+                startActivity(intentPage);
             }
         });
     }
